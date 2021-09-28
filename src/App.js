@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Data from './Data/mockData.json'
+
 
 function App() {
-  return (
+ 
+
+//for(hints elem : title){
+  //elem.println();
+//}
+
+
+
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <p>Hacker News</p>
+    <input />
+    <button >Search</button>
+    
+{Data.hits.map((article) =>  <div><a href = {article.url}>{article.title}</a></div>)}
+
     </div>
   );
 }
