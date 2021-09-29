@@ -1,0 +1,161 @@
+* {
+  font-family: 'Nunito';
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80em;
+}
+
+.header {
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.search{
+  vertical-align: baseline;
+  padding-top: 1.75rem;
+}
+
+.list-item {
+  font-weight: 600;
+  list-style-type: none;
+  text-align: left;
+}
+
+.list-item a {
+  text-decoration: none;
+  color:rgb(37, 37, 37);
+}
+
+.list-item a:hover {
+  color:rgb(223, 44, 12);
+}
+
+.sub-list {
+  padding-left: 0px;
+  font-weight: 300;
+  font-size: 12px;
+  display: inline;
+  list-style-type: none;
+}
+
+.sub-list li {
+  display: inline;
+}
+
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+}
+
+.pagination a {
+  display: inline;
+    text-decoration: none;
+}
+
+.pagination-count {
+  display: inline-block;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.page-down, .page-up {
+  cursor: pointer;
+}
+
+
+
+/*###################### Overlay with loading spinner ###########################*/
+.loading-overlay {
+  padding-top: 20%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+  display: block;
+  position: fixed;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
